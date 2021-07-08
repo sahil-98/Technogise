@@ -171,7 +171,7 @@ class Chess{
 
 
 };
-//Main Functionn
+//Main Function
 int main(){
 	Chess chessobject;
 
