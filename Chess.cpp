@@ -135,25 +135,39 @@ public:
 	}
 };
 
+class PieceFactory {
+	unordered_map<string , Piece*> pieces;
+    public:
+	PieceFactory(){
+
+		cout<<"hello\n";
+		pieces["King"] = new King();
+		pieces["Queen"] = new Queen();
+		pieces["Bishop"] = new Bishop();
+		pieces["Knight"] = new Knight();
+		pieces["Rook"] = new Rook();
+		pieces["Pawn"] = new Pawn();
+	}
+
+    Piece* getModel(string piece){
+        return pieces[piece];
+    }
+
+};
+
 class Chess{
     unordered_map<string , Piece*> pieces;
 
 	public:
-		Movements movement;
+		PieceFactory pieceFactory;
+		Piece* pieceObj;
+		//Movements movement;
 		//unordered_map<string , Piece*> pieces;
 
 		Chess(){
 			cout<<"hello\n";
-			pieces["King"] = new King();
-			pieces["Queen"] = new Queen();
-			pieces["Bishop"] = new Bishop();
-			pieces["Knight"] = new Knight();
-			pieces["Rook"] = new Rook();
-			pieces["Pawn"] = new Pawn();
 		}
-		void query(string piece, string cell){
-			//todo
-			// parse the cell into integers
+		void query(string piece , string cell){
 			int currentVerticalPos = cell[0]-'A';
 			int currentHorizontalPos = cell[1]-'0';
 			// cout<<i<<" "<<j<<endl;
@@ -162,8 +176,10 @@ class Chess{
 				cout<<"invalid query\n";
 				return;
 			}
+			
 			int MaxSteps = (piece == "King" || piece == "Pawn" || piece == "Knight")? 1 : INT_MAX;
-			pieces[piece]->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps);
+			pieceObj = pieceFactory.getModel(piece);
+			pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps);
 		}
 };
 int main(){
