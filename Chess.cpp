@@ -7,14 +7,13 @@ class Util
 {
 public:
 	void move(int currX, int currY, int xStep, int yStep, int totalSteps){
-		char  alphabets[8] = {'A' , 'B' , 'C' , 'D' , 'E', 'F' ,'G' , 'H' };
-		totalSteps = min(totalSteps,N-1);
+		totalSteps = min(totalSteps,7);
 		// todo and use checkBounds
 		for(int i=0;i<totalSteps;i++){
 			currX+=xStep;
 			currY+=yStep;
 			if(!checkBounds(currX,currY)) return;
-			cout<<alphabets[currX]<<","<<currY<<endl;
+			cout<<currX<<","<<currY<<endl;
 		}
 	}
 
@@ -58,16 +57,6 @@ class Queen : public Piece {
 public:
 	void possibleMoves(int i, int j){
 
-		util.move(i,j,1,1,INT_MAX);
-		util.move(i,j,1,-1,INT_MAX);
-		util.move(i,j,-1,1,INT_MAX);
-		util.move(i,j,-1,-1,INT_MAX);
-
-
-		util.move(i,j,1,0,INT_MAX);
-		util.move(i,j,0,1,INT_MAX);
-		util.move(i,j,-1,0,INT_MAX);
-		util.move(i,j,0,-1,INT_MAX);
 	}
 };
 
@@ -76,10 +65,6 @@ class Bishop : public Piece {
 public:
 	void possibleMoves(int i, int j){
 
-		util.move(i,j,1,1,INT_MAX);
-		util.move(i,j,1,-1,INT_MAX);
-		util.move(i,j,-1,1,INT_MAX);
-		util.move(i,j,-1,-1,INT_MAX);
 	}
 };
 
@@ -88,14 +73,6 @@ class Knight : public Piece {
 public:
 	void possibleMoves(int i, int j){
 
-		util.move(i,j,2,1,1);
-		util.move(i,j,1,2,1);
-		util.move(i,j,-2,1,1);
-		util.move(i,j,-1,2,1);
-		util.move(i,j,2,-1,1);
-		util.move(i,j,1,-2,1);
-		util.move(i,j,-2,-1,1);
-		util.move(i,j,-1,-2,1);
 	}
 };
 
@@ -103,11 +80,6 @@ class Rook : public Piece {
 
 public:
 	void possibleMoves(int i, int j){
-
-		util.move(i,j,1,0,1);
-		util.move(i,j,0,1,1);
-		util.move(i,j,-1,0,1);
-		util.move(i,j,0,-1,1);
 
 	}
 };
@@ -118,7 +90,6 @@ class Pawn : public Piece {
 public:
 	void possibleMoves(int i, int j){
 
-		util.move(i,j,1,1,1);
 	}
 };
 
@@ -126,6 +97,7 @@ class Chess{
 
 	public:
 		Util util;
+		King p;
 
 		Chess(){
 			cout<<"hello\n";
@@ -140,8 +112,7 @@ class Chess{
 				cout<<"invalid query\n";
 				return;
 			}
-
-		unordered_map<string , int> pieces;
+			unordered_map<string , int> pieces;
 			pieces["King"] = 1;
 			pieces["Queen"] = 2;
 			pieces["Rook"] = 3;
@@ -160,7 +131,7 @@ class Chess{
 				case 2 :
                 {
                             Queen q;
-							q.possibleMoves(i,j);
+							p.possibleMoves(i,j);
 							break;
                 }
 
@@ -174,7 +145,7 @@ class Chess{
 				case 4 :
                 {
                             Bishop b;
-							b.possibleMoves(i,j);
+							p.possibleMoves(i,j);
 							break;
                 }
 
@@ -196,18 +167,15 @@ class Chess{
 
 
 			}
+		}
 
-    }
+
 };
-<<<<<<< HEAD
-=======
-//Main Functionn
->>>>>>> f1aebf5699dff3df45d7855629ade4952d91ad53
+//Main Function
 int main(){
 	Chess chessobject;
 
-	//chessobject.query("King", "A5");
-	chessobject.query("Knight", "D4");
+	chessobject.query("King", "A5");
 	// King k;
 	// k.possibleMoves();
 
