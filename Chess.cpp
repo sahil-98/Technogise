@@ -11,7 +11,8 @@ public:
 	}
 
 	bool checkBounds(int x, int y){
-		
+		if(x<0 || x>=8) return false;
+		if(y<0 || y>=8) return false;
 	}
 };
 
@@ -76,6 +77,14 @@ class Chess{
 		void query(string piece, string cell){
 			//todo
 			// parse the cell into integers
+			int verticalPos = cell[0]-'A';
+			int HorizontalPos = cell[1]-'0';
+			// cout<<i<<" "<<j<<endl;
+			if(!util.checkBounds(verticalPos,HorizontalPos)){
+				cout<<"invalid query";
+				return;
+			}
+		}	
 };
 int main(){
 	Chess chessobject;
