@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1625755233 source:c:\users\hp\desktop\tchess\chess.cpp
+	"Chess.h"
+	"PieceFactory.h"
+	<bits/stdc++.h>
+
+1625755259 c:\users\hp\desktop\tchess\chess.h
+	"PieceFactory.h"
+	"Piece.h"
+	<bits/stdc++.h>
+
+1625752081 source:c:\users\hp\desktop\tchess\movements.cpp
+	"Movements.h"
+	<bits/stdc++.h>
+
+1625751997 c:\users\hp\desktop\tchess\movements.h
+
+1625752786 source:c:\users\hp\desktop\tchess\piece.cpp
+	<bits/stdc++.h>
+	"Piece.h"
+	"Movements.h"
+
+1625752550 c:\users\hp\desktop\tchess\piece.h
+	"Movements.h"
+
+1625754831 source:c:\users\hp\desktop\tchess\piecefactory.cpp
+	"PieceFactory.h"
+	"Piece.h"
+	"Bishop.h"
+	"King.h"
+	"Knight.h"
+	"Pawn.h"
+	"Queen.h"
+	"Queen.h"
+	"Rook.h"
+
+1625754566 c:\users\hp\desktop\tchess\piecefactory.h
+	"Piece.h"
+	<bits/stdc++.h>
+
+1625755310 source:c:\users\hp\desktop\tchess\main.cpp
+	<bits/stdc++.h>
+	"Chess.h"
+
+1625753136 source:c:\users\hp\desktop\tchess\king.cpp
+	"King.h"
+	"Piece.h"
+
+1625753050 c:\users\hp\desktop\tchess\king.h
+	"Piece.h"
+
+1625753631 source:c:\users\hp\desktop\tchess\bishop.cpp
+	"Bishop.h"
+	"Piece.h"
+
+1625753577 c:\users\hp\desktop\tchess\bishop.h
+	"Piece.h"
+
+1625753810 source:c:\users\hp\desktop\tchess\knight.cpp
+	"Knight.h"
+	"Piece.h"
+
+1625753674 c:\users\hp\desktop\tchess\knight.h
+	"Piece.h"
+
+1625754086 source:c:\users\hp\desktop\tchess\pawn.cpp
+	"Pawn.h"
+	"Piece.h"
+
+1625754033 c:\users\hp\desktop\tchess\pawn.h
+	"Piece.h"
+
+1625753463 source:c:\users\hp\desktop\tchess\queen.cpp
+	"Queen.h"
+	"Piece.h"
+
+1625753537 c:\users\hp\desktop\tchess\queen.h
+	"Piece.h"
+
+1625753987 source:c:\users\hp\desktop\tchess\rook.cpp
+	"Rook.h"
+	"Piece.h"
+
+1625753983 c:\users\hp\desktop\tchess\rook.h
+	"Piece.h"
+
