@@ -13,6 +13,7 @@ public:
 	bool checkBounds(int x, int y){
 		if(x<0 || x>=8) return false;
 		if(y<0 || y>=8) return false;
+		return true;
 	}
 };
 
