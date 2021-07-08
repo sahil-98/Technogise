@@ -1,6 +1,6 @@
 #include "TestPawn.h"
 #include "Pawn.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 TestPawn::TestPawn()

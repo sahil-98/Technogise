@@ -1,7 +1,8 @@
 #ifndef QUEEN_H
 #define QUEEN_H
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include<iostream>
+#include<assert.h>
 using namespace std;
 
 class Queen: public Piece

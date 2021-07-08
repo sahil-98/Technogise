@@ -1,6 +1,6 @@
 #include "TestQueen.h"
 #include "Queen.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 TestQueen::TestQueen()

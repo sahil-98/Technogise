@@ -1,7 +1,8 @@
 #ifndef PAWN_H
 #define PAWN_H
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include<iostream>
+#include<assert.h>
 using namespace std;
 
 class Pawn: public Piece

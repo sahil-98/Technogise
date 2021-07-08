@@ -1,6 +1,6 @@
 #include "TestKnight.h"
 #include "Knight.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 TestKnight::TestKnight()

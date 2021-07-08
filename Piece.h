@@ -1,7 +1,8 @@
 #ifndef PIECE_H
 #define PIECE_H
 #include "Movements.h"
-#include<bits/stdc++.h>
+#include<iostream>
+#include<assert.h>
 using namespace std;
 
 class Piece

@@ -1,7 +1,10 @@
 #ifndef PIECEFACTORY_H
 #define PIECEFACTORY_H
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include "Rook.h"
+#include<iostream>
+#include<assert.h>
+#include<unordered_map>
 using namespace std;
 
 class PieceFactory

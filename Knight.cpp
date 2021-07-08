@@ -1,6 +1,6 @@
 #include "Knight.h"
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 Knight::Knight()

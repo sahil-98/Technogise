@@ -1,7 +1,8 @@
 #ifndef KNIGHT_H
 #define KNIGHT_H
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include "TestKnight.h"
+#include<iostream>
 using namespace std;
 
 class Knight : public Piece

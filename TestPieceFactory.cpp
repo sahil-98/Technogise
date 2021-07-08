@@ -8,7 +8,7 @@
 #include "Queen.h"
 #include "Queen.h"
 #include "Rook.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 TestPieceFactory::TestPieceFactory()
@@ -19,7 +19,6 @@ TestPieceFactory::TestPieceFactory()
 void TestPieceFactory::getModelTest(){
     PieceFactory pieceFactory;
     string t1="King", t2="Queen", t3="Bishop", t4="Knight", t5="Rook",t6="Pawn",t7="Jack";
-    vector<string>failed;
 
     assert(typeid(pieceFactory.getModel("King")) == typeid(Piece*));
     assert(typeid(pieceFactory.getModel("Queen")) == typeid(Piece*));

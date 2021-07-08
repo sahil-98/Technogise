@@ -1,7 +1,8 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<iostream>
 #include "Piece.h"
 #include "Movements.h"
+
+using namespace std;
 
 Piece::Piece()
 {

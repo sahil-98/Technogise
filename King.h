@@ -1,7 +1,8 @@
 #ifndef KING_H
 #define KING_H
 #include "Piece.h"
-#include<bits/stdc++.h>
+#include "TestKing.h"
+#include<iostream>
 using namespace std;
 
 class King: public Piece

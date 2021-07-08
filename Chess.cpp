@@ -1,6 +1,6 @@
 #include "Chess.h"
 #include "PieceFactory.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 Chess::Chess(int boardDimension)

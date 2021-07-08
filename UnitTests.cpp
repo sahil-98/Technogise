@@ -8,7 +8,7 @@
 #include "TestRook.h"
 #include "TestPawn.h"
 #include "TestMovements.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 UnitTests::UnitTests()

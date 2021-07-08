@@ -1,6 +1,6 @@
 #include "TestBishop.h"
 #include "Bishop.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 TestBishop::TestBishop()

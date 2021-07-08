@@ -1,6 +1,6 @@
 #include "TestChess.h"
 #include "Chess.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 

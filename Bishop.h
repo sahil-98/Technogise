@@ -5,8 +5,7 @@
 using namespace std;
 
 
-class Bishop: public Piece
-{
+class Bishop: public Piece{
     public:
         Bishop();
         string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);

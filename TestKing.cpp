@@ -1,6 +1,6 @@
 #include "TestKing.h"
 #include "King.h"
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 
