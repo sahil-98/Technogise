@@ -199,6 +199,10 @@ class Chess{
 
     }
 };
+<<<<<<< HEAD
+=======
+//Main Functionn
+>>>>>>> f1aebf5699dff3df45d7855629ade4952d91ad53
 int main(){
 	Chess chessobject;
 
