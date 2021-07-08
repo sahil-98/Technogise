@@ -1,18 +1,21 @@
 #include "Rook.h"
 #include "Piece.h"
+#include<bits/stdc++.h>
+using namespace std;
 
 Rook::Rook()
 {
     //ctor
 }
 
-void Rook::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+string Rook::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+    string moveListExtend="";
+    moveListExtend+= Piece::movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+    moveListExtend+= Piece::movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+    moveListExtend+= Piece::movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+    moveListExtend+= Piece::movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+    return moveListExtend;
 
-		Piece::movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
-		Piece::movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
-		Piece::movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
-		Piece::movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
-
-	}
+}
 
 

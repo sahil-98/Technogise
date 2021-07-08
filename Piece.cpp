@@ -8,7 +8,7 @@ Piece::Piece()
     //ctor
 }
 
-void Piece::possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
+string Piece::possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
 	 	};
 
 

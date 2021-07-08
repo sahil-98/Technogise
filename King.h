@@ -1,13 +1,15 @@
 #ifndef KING_H
 #define KING_H
 #include "Piece.h"
+#include<bits/stdc++.h>
+using namespace std;
 
 
 class King: public Piece
 {
     public:
         King();
-        void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
 
     protected:
 

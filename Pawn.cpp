@@ -1,11 +1,14 @@
 #include "Pawn.h"
 #include "Piece.h"
+#include<bits/stdc++.h>
+using namespace std;
+
 Pawn::Pawn()
 {
     //ctor
 }
 
-void Pawn::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+string Pawn::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		Piece::movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
-	}
+    return Piece::movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+}

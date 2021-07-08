@@ -1,12 +1,14 @@
 #include "Bishop.h"
 #include "Piece.h"
+#include<bits/stdc++.h>
+using namespace std;
 
 Bishop::Bishop()
 {
     //ctor
 }
 
-void Bishop::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+string Bishop::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		Piece::movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		return Piece::movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 	}

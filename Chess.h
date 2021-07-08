@@ -13,7 +13,7 @@ class Chess
         PieceFactory pieceFactory;
         Piece* pieceObj;
         Chess(int boardDimension);
-        void query(string piece , string cell);
+        string query(string piece , string cell);
 
     protected:
 

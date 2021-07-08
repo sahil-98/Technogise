@@ -21,6 +21,7 @@ PieceFactory::PieceFactory()
 }
 
 Piece* PieceFactory::getModel(string piece){
+    if(PieceFactory::pieces.find(piece)==PieceFactory::pieces.end()) return nullptr;
     return PieceFactory::pieces[piece];
 }
 

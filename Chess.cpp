@@ -9,18 +9,20 @@ Chess::Chess(int boardDimension)
     Chess::dim = boardDimension;
 }
 
-void Chess::query(string piece , string cell){
+string Chess::query(string piece , string cell){
 
     int currentVerticalPos 	 = cell[0]-'A';
-    int currentHorizontalPos = cell[1]-'0';
+    int currentHorizontalPos = cell[1]-'1';
 
     if(currentVerticalPos<0 || currentHorizontalPos<0 ||
         currentVerticalPos>=dim || currentHorizontalPos>=dim){
-        cout<<"invalid query\n";
-        return;
+        return "invalid query\n";
     }
 
     int MaxSteps = Chess::pieceFactory.getSteps(piece);
     Chess::pieceObj = pieceFactory.getModel(piece);
-    Chess::pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
+    if(!Chess::pieceObj){
+        return "invalid query\n";
+    }
+    return Chess::pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
 }

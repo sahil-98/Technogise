@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
 #include "Chess.h"
+#include<bits/stdc++.h>
 using namespace std;
 
 
@@ -9,30 +9,38 @@ int main(){
 	Chess chessobject(boardDimension);
 
     cout<<"King"<<endl;
-	chessobject.query("King", "A5");
+	cout<<chessobject.query("King", "A5");
 	cout<<"King\n"<<endl;
 
 	cout<<"Queen"<<endl;
-	chessobject.query("Queen", "E3");
+	cout<<chessobject.query("Queen", "E3");
 	cout<<"Queen\n"<<endl;
 
 	cout<<"Bishop"<<endl;
-	chessobject.query("Bishop", "D2");
+	cout<<chessobject.query("Bishop", "D2");
 	cout<<"Bishop\n"<<endl;
 
 	cout<<"Knight"<<endl;
-	chessobject.query("Knight", "D4");
+	cout<<chessobject.query("Knight", "D4");
 	cout<<"Knight\n"<<endl;
 
 	cout<<"Rook"<<endl;
-	chessobject.query("Rook", "C1");
+	cout<<chessobject.query("Rook", "C1");
 	cout<<"Rook\n"<<endl;
 
 	cout<<"Pawn"<<endl;
-	chessobject.query("Pawn", "E6");
+	cout<<chessobject.query("Pawn", "E6");
 	cout<<"Pawn\n"<<endl;
 
     cout<<"Pawn"<<endl;
-	chessobject.query("Pawn", "G0");
+	cout<<chessobject.query("Pawn", "G0");
 	cout<<"Pawn\n"<<endl;
+
+	cout<<"Invalid string"<<endl;
+	cout<<chessobject.query("Pawn", "Z1");
+	cout<<"Invalid string\n"<<endl;
+
+	cout<<"Invalid string"<<endl;
+	cout<<chessobject.query("Mango", "G0");
+	cout<<"Invalid string\n"<<endl;
 }
