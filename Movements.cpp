@@ -18,12 +18,10 @@ string Movements::move(int currentVerticalPos, int currentHorizontalPos, int Ver
         currentHorizontalPos+= HorizontalStep;
         if(currentVerticalPos<0 || currentHorizontalPos<0 ||
            currentVerticalPos>=dim || currentHorizontalPos>=dim) return moveList;
-        //cout<<alphabets[currentVerticalPos]<<","<<currentHorizontalPos<<endl;
-       // moveList+="\n"+alphabets[currentVerticalPos]+","+currentHorizontalPos;
+
        moveList+="\n";
        moveList+=alphabets[currentVerticalPos];
        moveList+='0'+currentHorizontalPos+1;
-        //moveList+="\banana";
     }
     return moveList;
 }

@@ -11,7 +11,6 @@
 PieceFactory::PieceFactory()
 {
     //ctor
-    cout<<"hello\n";
     PieceFactory::pieces["King"] = new King();
     PieceFactory::pieces["Queen"] = new Queen();
     PieceFactory::pieces["Bishop"] = new Bishop();

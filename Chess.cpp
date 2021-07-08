@@ -19,10 +19,11 @@ string Chess::query(string piece , string cell){
         return "invalid query\n";
     }
 
-    int MaxSteps = Chess::pieceFactory.getSteps(piece);
+
     Chess::pieceObj = pieceFactory.getModel(piece);
     if(!Chess::pieceObj){
         return "invalid query\n";
     }
+    int MaxSteps = Chess::pieceFactory.getSteps(piece);
     return Chess::pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
 }

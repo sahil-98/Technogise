@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1625759679 source:c:\users\hp\desktop\tchess\chess.cpp
+1625762315 source:c:\users\hp\desktop\tchess\chess.cpp
 	"Chess.h"
 	"PieceFactory.h"
 	<bits/stdc++.h>
@@ -9,7 +9,7 @@
 	"Piece.h"
 	<bits/stdc++.h>
 
-1625760337 source:c:\users\hp\desktop\tchess\movements.cpp
+1625761670 source:c:\users\hp\desktop\tchess\movements.cpp
 	"Movements.h"
 	<bits/stdc++.h>
 
@@ -25,7 +25,7 @@
 	"Movements.h"
 	<bits/stdc++.h>
 
-1625757527 source:c:\users\hp\desktop\tchess\piecefactory.cpp
+1625767568 source:c:\users\hp\desktop\tchess\piecefactory.cpp
 	"PieceFactory.h"
 	"Piece.h"
 	"Bishop.h"
@@ -40,8 +40,9 @@
 	"Piece.h"
 	<bits/stdc++.h>
 
-1625759158 source:c:\users\hp\desktop\tchess\main.cpp
+1625777136 source:c:\users\hp\desktop\tchess\main.cpp
 	"Chess.h"
+	"UnitTests.h"
 	<bits/stdc++.h>
 
 1625759467 source:c:\users\hp\desktop\tchess\king.cpp
@@ -97,4 +98,107 @@
 1625759419 c:\users\hp\desktop\tchess\rook.h
 	"Piece.h"
 	<bits/stdc++.h>
+
+1625762547 source:c:\users\hp\desktop\tchess\chesstest.cpp
+	"ChessTest.h"
+
+1625762547 c:\users\hp\desktop\tchess\chesstest.h
+
+1625777077 source:c:\users\hp\desktop\tchess\testpiecefactory.cpp
+	"TestPieceFactory.h"
+	"PieceFactory.h"
+	"Piece.h"
+	"Bishop.h"
+	"King.h"
+	"Knight.h"
+	"Pawn.h"
+	"Queen.h"
+	"Queen.h"
+	"Rook.h"
+	<bits/stdc++.h>
+
+1625767415 c:\users\hp\desktop\tchess\testpiecefactory.h
+
+1625776973 source:c:\users\hp\desktop\tchess\testchess.cpp
+	"TestChess.h"
+	"Chess.h"
+	<bits/stdc++.h>
+
+1625769244 c:\users\hp\desktop\tchess\testchess.h
+
+1625777047 source:c:\users\hp\desktop\tchess\testmovements.cpp
+	"TestMovements.h"
+	"Movements.h"
+	<bits/stdc++.h>
+
+1625773500 c:\users\hp\desktop\tchess\testmovements.h
+	"Movements.h"
+
+1625776987 source:c:\users\hp\desktop\tchess\testking.cpp
+	"TestKing.h"
+	"King.h"
+	<bits/stdc++.h>
+
+1625769821 c:\users\hp\desktop\tchess\testking.h
+
+1625777088 source:c:\users\hp\desktop\tchess\testqueen.cpp
+	"TestQueen.h"
+	"Queen.h"
+	<bits/stdc++.h>
+
+1625770285 c:\users\hp\desktop\tchess\testqueen.h
+
+1625770765 c:\users\hp\desktop\tchess\testbishop.h
+
+1625776964 source:c:\users\hp\desktop\tchess\testbishop.cpp
+	"TestBishop.h"
+	"Bishop.h"
+	<bits/stdc++.h>
+
+1625777012 source:c:\users\hp\desktop\tchess\testknight.cpp
+	"TestKnight.h"
+	"Knight.h"
+	<bits/stdc++.h>
+
+1625771025 c:\users\hp\desktop\tchess\testknight.h
+
+1625777110 source:c:\users\hp\desktop\tchess\testrook.cpp
+	"TestRook.h"
+	"Rook.h"
+	<bits/stdc++.h>
+
+1625772008 c:\users\hp\desktop\tchess\testrook.h
+
+1625777060 source:c:\users\hp\desktop\tchess\testpawn.cpp
+	"TestPawn.h"
+	"Pawn.h"
+	<bits/stdc++.h>
+
+1625772197 c:\users\hp\desktop\tchess\testpawn.h
+
+1625763179 source:c:\users\hp\desktop\tchess\piecefactorytest.cpp
+	"PieceFactoryTest.h"
+	"PieceFactory.h"
+
+1625762991 c:\users\hp\desktop\tchess\piecefactorytest.h
+
+1625750508 source:c:\users\hp\desktop\tchess\tchess.cpp
+	"tChess.h"
+
+1625750508 c:\users\hp\desktop\tchess\tchess.h
+
+1625777169 source:c:\users\hp\desktop\tchess\unittests.cpp
+	"UnitTests.h"
+	"TestPieceFactory.h"
+	"TestChess.h"
+	"TestKing.h"
+	"TestQueen.h"
+	"TestBishop.h"
+	"TestKnight.h"
+	"TestRook.h"
+	"TestPawn.h"
+	"TestMovements.h"
+	<bits/stdc++.h>
+
+1625776102 c:\users\hp\desktop\tchess\unittests.h
 
