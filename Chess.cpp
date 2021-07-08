@@ -126,7 +126,6 @@ class Chess{
 
 	public:
 		Util util;
-		King p;
 
 		Chess(){
 			cout<<"hello\n";
