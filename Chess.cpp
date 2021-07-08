@@ -169,9 +169,6 @@ class Chess{
 			}
 		}
 
-		// we need a fucntion called move which will be overrided by pieces
-
-
 };
 int main(){
 	Chess chessobject;
