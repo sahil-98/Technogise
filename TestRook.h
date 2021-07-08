@@ -7,10 +7,6 @@ class TestRook
     public:
         TestRook();
         void possibleMovesTest();
-
-    protected:
-
-    private:
 };
 
 #endif // TESTROOK_H

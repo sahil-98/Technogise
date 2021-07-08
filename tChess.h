@@ -7,9 +7,6 @@ class tChess
     public:
         tChess();
 
-    protected:
-
-    private:
 };
 
 #endif // TCHESS_H

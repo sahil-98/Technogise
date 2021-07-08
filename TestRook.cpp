@@ -5,7 +5,9 @@ using namespace std;
 
 TestRook::TestRook()
 {
+
 }
+//Unit Testing using asserts
 void TestRook::possibleMovesTest(){
     Rook rook;
     assert(rook.possibleMoves(2,0,INT_MAX,8)=="\nD1\nE1\nF1\nG1\nH1\nB1\nA1\nC2\nC3\nC4\nC5\nC6\nC7\nC8");

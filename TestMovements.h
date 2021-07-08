@@ -16,9 +16,6 @@ class TestMovements
         void moveLeftTest();
         void moveRightTest();
 
-    protected:
-
-    private:
 };
 
 #endif // TESTMOVEMENTS_H

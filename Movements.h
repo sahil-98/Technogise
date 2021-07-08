@@ -3,7 +3,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 class Movements
 {
     public:
@@ -15,9 +14,7 @@ class Movements
         string moveRight(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim);
         string moveDiagonal(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim);
         string moveLdirection(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim);
-    protected:
 
-    private:
 };
 
 #endif // MOVEMENTS_H

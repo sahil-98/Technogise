@@ -5,8 +5,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 class Chess
 {
     public:
@@ -14,8 +12,6 @@ class Chess
         Piece* pieceObj;
         Chess(int boardDimension);
         string query(string piece , string cell);
-
-    protected:
 
     private:
         int dim;

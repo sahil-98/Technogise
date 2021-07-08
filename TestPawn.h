@@ -7,10 +7,6 @@ class TestPawn
     public:
         TestPawn();
         void possibleMovesTest();
-
-    protected:
-
-    private:
 };
 
 #endif // TESTPAWN_H

@@ -5,9 +5,9 @@ using namespace std;
 
 TestQueen::TestQueen()
 {
+
 }
-
-
+//Unit Testing using asserts
 void TestQueen::possibleMovesTest(){
     Queen queen;
     assert(queen.possibleMoves(4,2,INT_MAX,8)=="\nF3\nG3\nH3\nD3\nC3\nB3\nA3\nE2\nE1\nE4\nE5\nE6\nE7\nE8\nF4\nG5\nH6\nF2\nG1\nD4\nC5\nB6\nA7\nD2\nC1");

@@ -8,9 +8,6 @@ class TestChess
         TestChess();
         void queryTest();
 
-    protected:
-
-    private:
 };
 
 #endif // TESTCHESS_H

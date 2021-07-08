@@ -10,7 +10,7 @@
 
 PieceFactory::PieceFactory()
 {
-    //ctor
+    //Map to Insert with Key as string and value as address to object
     PieceFactory::pieces["King"] = new King();
     PieceFactory::pieces["Queen"] = new Queen();
     PieceFactory::pieces["Bishop"] = new Bishop();
@@ -21,9 +21,9 @@ PieceFactory::PieceFactory()
 
 Piece* PieceFactory::getModel(string piece){
     if(PieceFactory::pieces.find(piece)==PieceFactory::pieces.end()) return nullptr;
-    return PieceFactory::pieces[piece];
+    return PieceFactory::pieces[piece]; //returning address of object using string piece as key
 }
 
 int PieceFactory::getSteps(string piece){
-    return (piece == "King" || piece == "Pawn" || piece == "Knight")? 1 : INT_MAX;
+    return (piece == "King" || piece == "Pawn" || piece == "Knight")? 1 : INT_MAX; //returning steps w.r.t string piece
 }

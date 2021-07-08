@@ -4,17 +4,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 class Rook : public Piece
 {
     public:
         Rook();
         string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
 
-    protected:
-
-    private:
 };
 
 #endif // ROOK_H

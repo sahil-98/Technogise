@@ -5,9 +5,11 @@ using namespace std;
 
 Queen::Queen()
 {
-    //ctor
+
 }
+
 string Queen::possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
+    //Adding movements to moveListExtend string
     string moveListExtend="";
     moveListExtend+= Piece::movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
     moveListExtend+= Piece::movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);

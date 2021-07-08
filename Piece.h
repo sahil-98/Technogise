@@ -10,10 +10,6 @@ class Piece
         Piece();
         Movements movement;
         virtual string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
-
-    protected:
-
-    private:
 };
 
 #endif // PIECE_H

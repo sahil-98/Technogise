@@ -8,9 +8,6 @@ class TestPieceFactory
         TestPieceFactory();
         void getModelTest();
         void getStepsTest();
-    protected:
-
-    private:
 };
 
 #endif // TESTPIECEFACTORY_H

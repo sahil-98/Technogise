@@ -7,10 +7,6 @@ class TestBishop
     public:
         TestBishop();
         void possibleMovesTest();
-
-    protected:
-
-    private:
 };
 
 #endif // TESTBISHOP_H

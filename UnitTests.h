@@ -6,10 +6,6 @@ class UnitTests
 {
     public:
         UnitTests();
-
-    protected:
-
-    private:
 };
 
 #endif // UNITTESTS_H

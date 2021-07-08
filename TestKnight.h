@@ -8,9 +8,6 @@ class TestKnight
         TestKnight();
         void possibleMovesTest();
 
-    protected:
-
-    private:
 };
 
 #endif // TESTKNIGHT_H

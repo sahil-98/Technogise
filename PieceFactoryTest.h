@@ -7,9 +7,6 @@ class PieceFactoryTest
     public:
         PieceFactoryTest();
 
-    protected:
-
-    private:
 };
 
 #endif // PIECEFACTORYTEST_H

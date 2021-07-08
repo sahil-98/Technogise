@@ -5,10 +5,11 @@ using namespace std;
 
 Piece::Piece()
 {
-    //ctor
+
 }
 
 string Piece::possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
-	 	};
+
+};
 
 

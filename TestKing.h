@@ -7,10 +7,6 @@ class TestKing
     public:
         TestKing();
         void possibleMovesTest();
-
-    protected:
-
-    private:
 };
 
 #endif // TESTKING_H

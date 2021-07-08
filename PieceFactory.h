@@ -11,10 +11,6 @@ class PieceFactory
         PieceFactory();
         Piece* getModel(string piece);
         int getSteps(string piece);
-
-    protected:
-
-    private:
 };
 
 #endif // PIECEFACTORY_H

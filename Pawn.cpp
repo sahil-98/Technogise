@@ -5,7 +5,7 @@ using namespace std;
 
 Pawn::Pawn()
 {
-    //ctor
+
 }
 
 string Pawn::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){

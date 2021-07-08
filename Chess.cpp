@@ -5,7 +5,6 @@ using namespace std;
 
 Chess::Chess(int boardDimension)
 {
-    //ctor
     Chess::dim = boardDimension;
 }
 
@@ -18,7 +17,6 @@ string Chess::query(string piece , string cell){
         currentVerticalPos>=dim || currentHorizontalPos>=dim){
         return "invalid query\n";
     }
-
 
     Chess::pieceObj = pieceFactory.getModel(piece);
     if(!Chess::pieceObj){

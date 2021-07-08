@@ -11,9 +11,6 @@ class Bishop: public Piece
         Bishop();
         string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
 
-    protected:
-
-    private:
 };
 
 #endif // BISHOP_H

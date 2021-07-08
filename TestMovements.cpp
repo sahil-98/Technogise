@@ -6,10 +6,11 @@ using namespace std;
 
 TestMovements::TestMovements()
 {
-}
 
+}
+//Unit Testing using asserts
 void TestMovements::moveTest(){
-    assert(TestMovements::movements.move(1,3,1,2,1,8) == "\nC6");
+    assert(TestMovements::movements.move(1,3,1,2,1,8) == "\nC6");//checking with expected outcome string
     assert(TestMovements::movements.move(1,3,1,1,INT_MAX,8) == "\nC5\nD6\nE7\nF8");
 }
 

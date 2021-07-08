@@ -13,8 +13,9 @@ using namespace std;
 
 TestPieceFactory::TestPieceFactory()
 {
-}
 
+}
+//Unit Testing using asserts
 void TestPieceFactory::getModelTest(){
     PieceFactory pieceFactory;
     string t1="King", t2="Queen", t3="Bishop", t4="Knight", t5="Rook",t6="Pawn",t7="Jack";
@@ -27,7 +28,7 @@ void TestPieceFactory::getModelTest(){
     assert(typeid(pieceFactory.getModel("Rook")) == typeid(Piece*));
     assert(typeid(pieceFactory.getModel("Pawn")) == typeid(Piece*)) ;
 
-    assert(pieceFactory.getModel("Jack") == nullptr);
+    assert(pieceFactory.getModel("Jack") == nullptr);//checking with wrong input for piece
 }
 
 void TestPieceFactory::getStepsTest(){

@@ -13,51 +13,49 @@ using namespace std;
 
 UnitTests::UnitTests()
 {
+    TestPieceFactory testPieceFactoryObject;
+	TestChess testChessObject;
+	TestKing testKingObject;
+	TestQueen testQueenObject;
+	TestBishop testBishopObject;
+	TestKnight testKnightObject;
+	TestRook testRookObject;
+	TestPawn testPawnObject;
+	TestMovements testMovementsObject;
 
 
-    TestPieceFactory t1;
-	TestChess t2;
-	TestKing t3;
-	TestQueen t4;
-	TestBishop t5;
-	TestKnight t6;
-	TestRook t7;
-	TestPawn t8;
-	TestMovements t9;
+	testPieceFactoryObject.getModelTest();
+	testPieceFactoryObject.getStepsTest();
 
 
-	t1.getModelTest();
-	t1.getStepsTest();
+	testChessObject.queryTest();
 
 
-	t2.queryTest();
+	testKingObject.possibleMovesTest();
 
 
-	t3.possibleMovesTest();
+	testQueenObject.possibleMovesTest();
 
 
-	t4.possibleMovesTest();
+	testBishopObject.possibleMovesTest();
 
 
-	t5.possibleMovesTest();
+	testKnightObject.possibleMovesTest();
 
 
-	t6.possibleMovesTest();
+	testRookObject.possibleMovesTest();
 
 
-	t7.possibleMovesTest();
+	testPawnObject.possibleMovesTest();
 
 
-	t8.possibleMovesTest();
-
-
-	t9.moveTest();
-	t9.moveUpTest();
-	t9.moveDownTest();
-	t9.moveLeftTest();
-	t9.moveRightTest();
-	t9.moveDiagonalTest();
-	t9.moveLdirectionTest();
+	testMovementsObject.moveTest();
+	testMovementsObject.moveUpTest();
+	testMovementsObject.moveDownTest();
+	testMovementsObject.moveLeftTest();
+	testMovementsObject.moveRightTest();
+	testMovementsObject.moveDiagonalTest();
+	testMovementsObject.moveLdirectionTest();
 
 	cout<<"\nAll Unit Tests Passed\n";
 }

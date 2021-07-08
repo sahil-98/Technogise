@@ -9,10 +9,6 @@ class Queen: public Piece
     public:
         Queen();
         string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
-
-    protected:
-
-    private:
 };
 
 #endif // QUEEN_H

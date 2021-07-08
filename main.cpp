@@ -3,7 +3,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 int main(){
     UnitTests ut;
     const int boardDimension = 8;
@@ -64,8 +63,5 @@ int main(){
 
 	cout<<"\n\nMango G3 :"<<endl;
 	cout<<chessobject.query("Mango", "G3");
-
-
-
 
 }

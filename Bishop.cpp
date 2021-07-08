@@ -5,7 +5,7 @@ using namespace std;
 
 Bishop::Bishop()
 {
-    //ctor
+
 }
 
 string Bishop::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
