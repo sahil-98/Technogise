@@ -1,59 +1,50 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define N 8
-
 class Movements
 {
 public:
-	void move(int currentVerticalPos, int currentHorizontalPos, int VerticalStep, int HorizontalStep, int maxSteps){
+	void move(int currentVerticalPos, int currentHorizontalPos, int VerticalStep, int HorizontalStep, int maxSteps, int dim){
 		char  alphabets[8] = {'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G' , 'H'};
-		maxSteps = min(maxSteps,N-1);
+		maxSteps = min(maxSteps,dim-1);
 		// todo and use checkBounds
 		for(int i=0;i<maxSteps;i++){
 			currentVerticalPos+= VerticalStep;
 			currentHorizontalPos+= HorizontalStep;
 			if(currentVerticalPos<0 || currentHorizontalPos<0 ||
-			   currentVerticalPos>=N || currentHorizontalPos>=N) return;
-			//if(!checkBounds(currentVerticalPos,currentHorizontalPos)) return;
+			   currentVerticalPos>=dim || currentHorizontalPos>=dim) return;
 			cout<<alphabets[currentVerticalPos]<<","<<currentHorizontalPos<<endl;
 		}
 	}
-	void moveUp(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,1,0,maxSteps); //Up
+	void moveUp(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,1,0,maxSteps,dim); //Up
 	}
-	void moveDown(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,-1,0,maxSteps); //Down
+	void moveDown(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,-1,0,maxSteps,dim); //Down
 	}
-	void moveLeft(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,0,-1,maxSteps); //Left
+	void moveLeft(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,0,-1,maxSteps,dim); //Left
 	}
-	void moveRight(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,0,1,maxSteps); //Right
+	void moveRight(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,0,1,maxSteps,dim); //Right
 	}
-	void moveDiagonal(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,1,1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,1,-1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-1,1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-1,-1,maxSteps);
+	void moveDiagonal(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,1,1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,1,-1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-1,1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-1,-1,maxSteps,dim);
 	}
-	void moveLdirection(int currentVerticalPos , int currentHorizontalPos ,int maxSteps){
-		move(currentVerticalPos,currentHorizontalPos,2,1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,1,2,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-2,1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-1,2,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,2,-1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,1,-2,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-2,-1,maxSteps);
-		move(currentVerticalPos,currentHorizontalPos,-1,-2,maxSteps);
+	void moveLdirection(int currentVerticalPos , int currentHorizontalPos ,int maxSteps , int dim){
+		move(currentVerticalPos,currentHorizontalPos,2,1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,1,2,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-2,1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-1,2,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,2,-1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,1,-2,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-2,-1,maxSteps,dim);
+		move(currentVerticalPos,currentHorizontalPos,-1,-2,maxSteps,dim);
 	}
-	/*
-	bool checkBounds(int x, int y){
-		if(x<0 || x>=N) return false;
-		if(y<0 || y>=N) return false;
-		return true;
-	}
-	*/
+
 };
 
 
@@ -62,7 +53,7 @@ class Piece
 {
 public:
 	Movements movement;
-	 virtual void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps){
+	 virtual void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
 	 };
 
 };
@@ -70,13 +61,13 @@ public:
 class King : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
 
-		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 
 	}
 };
@@ -84,43 +75,43 @@ public:
 class Queen : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
 
-		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 	}
 };
 
 class Bishop : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 	}
 };
 
 class Knight : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		movement.moveLdirection(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveLdirection(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 	}
 };
 
 class Rook : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps);
-		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveDown(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveLeft(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		movement.moveRight(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 
 	}
 };
@@ -129,9 +120,9 @@ public:
 class Pawn : public Piece {
 
 public:
-	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps){
+	void possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
 
-		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps);
+		movement.moveUp(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
 	}
 };
 
@@ -153,37 +144,44 @@ class PieceFactory {
         return pieces[piece];
     }
 
+    int getSteps(string piece){
+		return (piece == "King" || piece == "Pawn" || piece == "Knight")? 1 : INT_MAX;	
+	}
+
 };
 
 class Chess{
     unordered_map<string , Piece*> pieces;
-
+    int dim ; //Board Dimension
 	public:
 		PieceFactory pieceFactory;
 		Piece* pieceObj;
-		//Movements movement;
-		//unordered_map<string , Piece*> pieces;
 
-		Chess(){
+		Chess(int boardDimension){
 			cout<<"hello\n";
+			dim = boardDimension;
 		}
+
 		void query(string piece , string cell){
-			int currentVerticalPos = cell[0]-'A';
+			
+			int currentVerticalPos 	 = cell[0]-'A';
 			int currentHorizontalPos = cell[1]-'0';
-			// cout<<i<<" "<<j<<endl;
+	
 			if(currentVerticalPos<0 || currentHorizontalPos<0 ||
-			   currentVerticalPos>=N || currentHorizontalPos>=N){
+				currentVerticalPos>=dim || currentHorizontalPos>=dim){
 				cout<<"invalid query\n";
 				return;
 			}
-			
-			int MaxSteps = (piece == "King" || piece == "Pawn" || piece == "Knight")? 1 : INT_MAX;
+
+			int MaxSteps = pieceFactory.getSteps(piece);
 			pieceObj = pieceFactory.getModel(piece);
-			pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps);
+			pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
 		}
 };
 int main(){
-	Chess chessobject;
+	const int boardDimension = 8;
+	
+	Chess chessobject(boardDimension);
 
     cout<<"King"<<endl;
 	chessobject.query("King", "A5");
@@ -212,7 +210,5 @@ int main(){
     cout<<"Pawn"<<endl;
 	chessobject.query("Pawn", "G0");
 	cout<<"Pawn\n"<<endl;
-	// King k;
-	// k.possibleMoves();
 
 }
