@@ -7,9 +7,14 @@ using namespace std;
 
 class Pawn: public Piece
 {
+    private:
+        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+
     public:
         Pawn();
-        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        friend class Chess;
+        friend class PieceFactory;
+        friend class TestPawn;
 
 };
 

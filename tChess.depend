@@ -13,11 +13,11 @@
 	"Movements.h"
 	<iostream>
 
-1625786735 c:\users\hp\desktop\tchess\movements.h
+1625789164 c:\users\hp\desktop\tchess\movements.h
 	<iostream>
 	<assert.h>
 
-1625782431 source:c:\users\hp\desktop\tchess\piece.cpp
+1625789061 source:c:\users\hp\desktop\tchess\piece.cpp
 	<iostream>
 	"Piece.h"
 	"Movements.h"
@@ -38,9 +38,8 @@
 	"Queen.h"
 	"Rook.h"
 
-1625786730 c:\users\hp\desktop\tchess\piecefactory.h
+1625789381 c:\users\hp\desktop\tchess\piecefactory.h
 	"Piece.h"
-	"Rook.h"
 	<iostream>
 	<assert.h>
 	<unordered_map>
@@ -55,9 +54,8 @@
 	"Piece.h"
 	<iostream>
 
-1625786591 c:\users\hp\desktop\tchess\king.h
+1625788516 c:\users\hp\desktop\tchess\king.h
 	"Piece.h"
-	"TestKing.h"
 	<iostream>
 
 1625781530 source:c:\users\hp\desktop\tchess\bishop.cpp
@@ -65,16 +63,16 @@
 	"Piece.h"
 	<iostream>
 
-1625786001 c:\users\hp\desktop\tchess\bishop.h
+1625788469 c:\users\hp\desktop\tchess\bishop.h
 	"Piece.h"
-	<bits/stdc++.h>
+	<iostream>
 
 1625781648 source:c:\users\hp\desktop\tchess\knight.cpp
 	"Knight.h"
 	"Piece.h"
 	<iostream>
 
-1625786619 c:\users\hp\desktop\tchess\knight.h
+1625788591 c:\users\hp\desktop\tchess\knight.h
 	"Piece.h"
 	"TestKnight.h"
 	<iostream>
@@ -84,7 +82,7 @@
 	"Piece.h"
 	<iostream>
 
-1625782084 c:\users\hp\desktop\tchess\pawn.h
+1625788657 c:\users\hp\desktop\tchess\pawn.h
 	"Piece.h"
 	<iostream>
 	<assert.h>
@@ -94,7 +92,7 @@
 	"Piece.h"
 	<iostream>
 
-1625782196 c:\users\hp\desktop\tchess\queen.h
+1625788765 c:\users\hp\desktop\tchess\queen.h
 	"Piece.h"
 	<iostream>
 	<assert.h>
@@ -104,7 +102,7 @@
 	"Piece.h"
 	<iostream>
 
-1625786661 c:\users\hp\desktop\tchess\rook.h
+1625788821 c:\users\hp\desktop\tchess\rook.h
 	"Piece.h"
 	"TestRook.h"
 	<iostream>

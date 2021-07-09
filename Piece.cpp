@@ -10,7 +10,7 @@ Piece::Piece()
 }
 
 string Piece::possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim){
-
+    return "";
 };
 
 

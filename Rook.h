@@ -8,10 +8,13 @@
 using namespace std;
 
 class Rook : public Piece
-{
+{   private:
+        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
     public:
         Rook();
-        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        friend class Chess;
+        friend class PieceFactory;
+        friend class TestRook;
 };
 
 #endif // ROOK_H
