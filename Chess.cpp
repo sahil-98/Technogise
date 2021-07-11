@@ -1,5 +1,6 @@
 #include "Chess.h"
 #include "PieceFactory.h"
+#include "Cell.h"
 #include<iostream>
 using namespace std;
 
@@ -8,13 +9,18 @@ Chess::Chess(int boardDimension)
     Chess::dim = boardDimension;
 }
 
-string Chess::query(string piece , string cell){
+string Chess::query(string piece , string pos){
 
-    int currentVerticalPos 	 = cell[0]-'A';
-    int currentHorizontalPos = cell[1]-'1';
+    int currentVerticalPos 	 = pos[0]-'A';
+    int currentHorizontalPos = pos[1]-'1';
+    //cout<<"1: "<<currentVerticalPos;
+    //cout<<"2: "<<currentHorizontalPos;
+    Cell cell(currentVerticalPos,currentHorizontalPos);
+    //cout<<cell.horizontal<<endl;
+    //cout<<cell.vertical<<endl;
 
-    if(currentVerticalPos<0 || currentHorizontalPos<0 ||
-        currentVerticalPos>=dim || currentHorizontalPos>=dim){
+    if(cell.vertical<0 || cell.horizontal<0 ||
+        cell.vertical>=dim || cell.horizontal>=dim){
         return "invalid query\n";
     }
 
@@ -23,5 +29,6 @@ string Chess::query(string piece , string cell){
         return "invalid query\n";
     }
     int MaxSteps = Chess::pieceFactory.getSteps(piece);
-    return Chess::pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
+    //return Chess::pieceObj->possibleMoves(currentVerticalPos,currentHorizontalPos,MaxSteps,dim);
+    return Chess::pieceObj->possibleMoves(cell,MaxSteps,dim);
 }

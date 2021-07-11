@@ -1,5 +1,6 @@
 #include "Bishop.h"
 #include "Piece.h"
+#include "Cell.h"
 #include<iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ Bishop::Bishop()
 
 }
 
-string Bishop::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+string Bishop::possibleMoves(Cell cell, int maxSteps , int dim){
 
-		return Piece::movement.moveDiagonal(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+		return Piece::movement.moveDiagonal(cell,maxSteps,dim);
 	}

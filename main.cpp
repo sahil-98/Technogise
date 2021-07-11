@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     UnitTests ut;
-    const int boardDimension = 8;
+    const int boardDimension = 8;;
 
 	Chess chessobject(boardDimension);
 

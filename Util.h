@@ -1,0 +1,15 @@
+#ifndef UTIL_H
+#define UTIL_H
+
+
+class Util
+{
+    public:
+        Util();
+
+    protected:
+
+    private:
+};
+
+#endif // UTIL_H

@@ -2,6 +2,7 @@
 #define CHESS_H
 #include "PieceFactory.h"
 #include "Piece.h"
+#include "Cell.h"
 #include<iostream>
 using namespace std;
 

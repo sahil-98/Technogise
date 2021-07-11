@@ -1,6 +1,7 @@
 #ifndef ROOK_H
 #define ROOK_H
 #include "Piece.h"
+#include "Cell.h"
 #include "TestRook.h"
 #include<iostream>
 #include<assert.h>
@@ -9,7 +10,7 @@ using namespace std;
 
 class Rook : public Piece
 {   private:
-        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        string possibleMoves( Cell cell ,int maxSteps , int dim);
     public:
         Rook();
         friend class Chess;

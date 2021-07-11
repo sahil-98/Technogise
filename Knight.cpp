@@ -1,5 +1,6 @@
 #include "Knight.h"
 #include "Piece.h"
+#include "Cell.h"
 #include<iostream>
 using namespace std;
 
@@ -8,8 +9,8 @@ Knight::Knight()
 
 }
 
-string Knight::possibleMoves(int currentVerticalPos, int currentHorizontalPos , int maxSteps , int dim){
+string Knight::possibleMoves(Cell cell , int maxSteps , int dim){
 
-    return Piece::movement.moveLdirection(currentVerticalPos,currentHorizontalPos,maxSteps,dim);
+    return Piece::movement.moveLdirection(cell,maxSteps,dim);
 }
 

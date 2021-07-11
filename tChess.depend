@@ -1,29 +1,35 @@
 # depslib dependency file v1.0
-1625781604 source:c:\users\hp\desktop\tchess\chess.cpp
+1626005378 source:c:\users\hp\desktop\tchess\chess.cpp
 	"Chess.h"
 	"PieceFactory.h"
+	"Cell.h"
 	<iostream>
 
-1625781910 c:\users\hp\desktop\tchess\chess.h
+1626002968 c:\users\hp\desktop\tchess\chess.h
 	"PieceFactory.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625781667 source:c:\users\hp\desktop\tchess\movements.cpp
+1626003057 source:c:\users\hp\desktop\tchess\movements.cpp
 	"Movements.h"
+	"Cell.h"
 	<iostream>
 
-1625789164 c:\users\hp\desktop\tchess\movements.h
+1626003042 c:\users\hp\desktop\tchess\movements.h
+	"Cell.h"
 	<iostream>
 	<assert.h>
 
-1625789061 source:c:\users\hp\desktop\tchess\piece.cpp
+1626002880 source:c:\users\hp\desktop\tchess\piece.cpp
 	<iostream>
 	"Piece.h"
 	"Movements.h"
+	"Cell.h"
 
-1625782104 c:\users\hp\desktop\tchess\piece.h
+1626002877 c:\users\hp\desktop\tchess\piece.h
 	"Movements.h"
+	"Cell.h"
 	<iostream>
 	<assert.h>
 
@@ -44,66 +50,78 @@
 	<assert.h>
 	<unordered_map>
 
-1625781558 source:c:\users\hp\desktop\tchess\main.cpp
+1626005394 source:c:\users\hp\desktop\tchess\main.cpp
 	"Chess.h"
 	"UnitTests.h"
 	<iostream>
 
-1625781636 source:c:\users\hp\desktop\tchess\king.cpp
+1626002895 source:c:\users\hp\desktop\tchess\king.cpp
 	"King.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788516 c:\users\hp\desktop\tchess\king.h
+1626002892 c:\users\hp\desktop\tchess\king.h
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625781530 source:c:\users\hp\desktop\tchess\bishop.cpp
+1626002860 source:c:\users\hp\desktop\tchess\bishop.cpp
 	"Bishop.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788469 c:\users\hp\desktop\tchess\bishop.h
+1626002800 c:\users\hp\desktop\tchess\bishop.h
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625781648 source:c:\users\hp\desktop\tchess\knight.cpp
+1626002902 source:c:\users\hp\desktop\tchess\knight.cpp
 	"Knight.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788591 c:\users\hp\desktop\tchess\knight.h
+1626002905 c:\users\hp\desktop\tchess\knight.h
 	"Piece.h"
+	"Cell.h"
 	"TestKnight.h"
 	<iostream>
 
-1625781678 source:c:\users\hp\desktop\tchess\pawn.cpp
+1626002919 source:c:\users\hp\desktop\tchess\pawn.cpp
 	"Pawn.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788657 c:\users\hp\desktop\tchess\pawn.h
+1626002916 c:\users\hp\desktop\tchess\pawn.h
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 	<assert.h>
 
-1625781709 source:c:\users\hp\desktop\tchess\queen.cpp
+1626002932 source:c:\users\hp\desktop\tchess\queen.cpp
 	"Queen.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788765 c:\users\hp\desktop\tchess\queen.h
+1626002929 c:\users\hp\desktop\tchess\queen.h
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 	<assert.h>
 
-1625781722 source:c:\users\hp\desktop\tchess\rook.cpp
+1626002942 source:c:\users\hp\desktop\tchess\rook.cpp
 	"Rook.h"
 	"Piece.h"
+	"Cell.h"
 	<iostream>
 
-1625788821 c:\users\hp\desktop\tchess\rook.h
+1626002946 c:\users\hp\desktop\tchess\rook.h
 	"Piece.h"
+	"Cell.h"
 	"TestRook.h"
 	<iostream>
 	<assert.h>
@@ -136,54 +154,61 @@
 
 1625781055 c:\users\hp\desktop\tchess\testchess.h
 
-1625781801 source:c:\users\hp\desktop\tchess\testmovements.cpp
+1626004162 source:c:\users\hp\desktop\tchess\testmovements.cpp
 	"TestMovements.h"
 	"Movements.h"
+	"Cell.h"
 	<iostream>
 
 1625781112 c:\users\hp\desktop\tchess\testmovements.h
 	"Movements.h"
 
-1625781777 source:c:\users\hp\desktop\tchess\testking.cpp
+1626004289 source:c:\users\hp\desktop\tchess\testking.cpp
 	"TestKing.h"
 	"King.h"
+	"Cell.h"
 	<iostream>
 
 1625781092 c:\users\hp\desktop\tchess\testking.h
 
-1625781839 source:c:\users\hp\desktop\tchess\testqueen.cpp
+1626003734 source:c:\users\hp\desktop\tchess\testqueen.cpp
 	"TestQueen.h"
 	"Queen.h"
+	"Cell.h"
 	<iostream>
 
 1625781140 c:\users\hp\desktop\tchess\testqueen.h
 
 1625781046 c:\users\hp\desktop\tchess\testbishop.h
 
-1625781734 source:c:\users\hp\desktop\tchess\testbishop.cpp
+1626004221 source:c:\users\hp\desktop\tchess\testbishop.cpp
 	"TestBishop.h"
 	"Bishop.h"
+	"Cell.h"
 	<iostream>
 
-1625781789 source:c:\users\hp\desktop\tchess\testknight.cpp
+1626003660 source:c:\users\hp\desktop\tchess\testknight.cpp
 	"TestKnight.h"
 	"Knight.h"
+	"Cell.h"
 	<iostream>
 
 1625781104 c:\users\hp\desktop\tchess\testknight.h
 
-1625781850 source:c:\users\hp\desktop\tchess\testrook.cpp
+1626003758 source:c:\users\hp\desktop\tchess\testrook.cpp
 	"TestRook.h"
 	"Rook.h"
+	"Cell.h"
 	<iostream>
 
 1625786705 c:\users\hp\desktop\tchess\testrook.h
 	"Rook.h"
 	"UnitTests.h"
 
-1625781812 source:c:\users\hp\desktop\tchess\testpawn.cpp
+1626003686 source:c:\users\hp\desktop\tchess\testpawn.cpp
 	"TestPawn.h"
 	"Pawn.h"
+	"Cell.h"
 	<iostream>
 
 1625781120 c:\users\hp\desktop\tchess\testpawn.h
@@ -213,4 +238,14 @@
 	<iostream>
 
 1625781165 c:\users\hp\desktop\tchess\unittests.h
+
+1626017856 source:c:\users\hp\desktop\tchess\cell.cpp
+	"Cell.h"
+
+1626001781 c:\users\hp\desktop\tchess\cell.h
+
+1626017282 source:c:\users\hp\desktop\tchess\util.cpp
+	"Util.h"
+
+1626017281 c:\users\hp\desktop\tchess\util.h
 

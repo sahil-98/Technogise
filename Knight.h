@@ -1,6 +1,7 @@
 #ifndef KNIGHT_H
 #define KNIGHT_H
 #include "Piece.h"
+#include "Cell.h"
 #include "TestKnight.h"
 #include<iostream>
 using namespace std;
@@ -8,7 +9,7 @@ using namespace std;
 class Knight : public Piece
 {
     private:
-        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        string possibleMoves(Cell cell,int maxSteps , int dim);
     public:
         Knight();
         friend class Chess;

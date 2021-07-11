@@ -1,6 +1,7 @@
 #ifndef QUEEN_H
 #define QUEEN_H
 #include "Piece.h"
+#include "Cell.h"
 #include<iostream>
 #include<assert.h>
 using namespace std;
@@ -8,7 +9,7 @@ using namespace std;
 class Queen: public Piece
 {
     private:
-        string possibleMoves(int currentVerticalPos, int currentHorizontalPos ,int maxSteps , int dim);
+        string possibleMoves(Cell cell ,int maxSteps , int dim);
     public:
         Queen();
         friend class Chess;

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +33,52 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bishop.cpp" />
+		<Unit filename="Bishop.h" />
+		<Unit filename="Chess.cpp" />
+		<Unit filename="Chess.h" />
+		<Unit filename="King.cpp" />
+		<Unit filename="King.h" />
+		<Unit filename="Knight.cpp" />
+		<Unit filename="Knight.h" />
+		<Unit filename="Movements.cpp" />
+		<Unit filename="Movements.h" />
+		<Unit filename="Pawn.cpp" />
+		<Unit filename="Pawn.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="PieceFactory.cpp" />
+		<Unit filename="PieceFactory.h" />
+		<Unit filename="PieceFactoryTest.h" />
+		<Unit filename="Queen.cpp" />
+		<Unit filename="Queen.h" />
+		<Unit filename="Rook.cpp" />
+		<Unit filename="Rook.h" />
+		<Unit filename="TestBishop.cpp" />
+		<Unit filename="TestBishop.h" />
+		<Unit filename="TestChess.cpp" />
+		<Unit filename="TestChess.h" />
+		<Unit filename="TestKing.cpp" />
+		<Unit filename="TestKing.h" />
+		<Unit filename="TestKnight.cpp" />
+		<Unit filename="TestKnight.h" />
+		<Unit filename="TestMovements.cpp" />
+		<Unit filename="TestMovements.h" />
+		<Unit filename="TestPawn.cpp" />
+		<Unit filename="TestPawn.h" />
+		<Unit filename="TestPieceFactory.cpp" />
+		<Unit filename="TestPieceFactory.h" />
+		<Unit filename="TestQueen.cpp" />
+		<Unit filename="TestQueen.h" />
+		<Unit filename="TestRook.cpp" />
+		<Unit filename="TestRook.h" />
+		<Unit filename="UnitTests.cpp" />
+		<Unit filename="UnitTests.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tChess.cbp" />
+		<Unit filename="tChess.cpp" />
+		<Unit filename="tChess.depend" />
+		<Unit filename="tChess.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
