@@ -9,7 +9,7 @@ using namespace std;
 class Queen: public Piece
 {
     private:
-        string possibleMoves(Cell cell ,int maxSteps , int dim);
+        string possibleMoves(Cell cell ,int maxSteps);
     public:
         Queen();
         friend class Chess;

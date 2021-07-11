@@ -9,7 +9,7 @@ using namespace std;
 class Pawn: public Piece
 {
     private:
-        string possibleMoves(Cell cell ,int maxSteps , int dim);
+        string possibleMoves(Cell cell ,int maxSteps);
 
     public:
         Pawn();

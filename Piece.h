@@ -9,9 +9,8 @@ using namespace std;
 class Piece
 {
     public:
-        Piece();
         Movements movement;
-        virtual string possibleMoves(Cell cell,int maxSteps , int dim);
+        virtual string possibleMoves(Cell cell,int maxSteps)=0;
 };
 
 #endif // PIECE_H

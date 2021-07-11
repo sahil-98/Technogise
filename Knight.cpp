@@ -9,8 +9,8 @@ Knight::Knight()
 
 }
 
-string Knight::possibleMoves(Cell cell , int maxSteps , int dim){
+string Knight::possibleMoves(Cell cell , int maxSteps){
 
-    return Piece::movement.moveLdirection(cell,maxSteps,dim);
+    return Piece::movement.moveLdirection(cell,maxSteps);
 }
 

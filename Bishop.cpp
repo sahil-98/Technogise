@@ -9,7 +9,7 @@ Bishop::Bishop()
 
 }
 
-string Bishop::possibleMoves(Cell cell, int maxSteps , int dim){
+string Bishop::possibleMoves(Cell cell, int maxSteps){
 
-		return Piece::movement.moveDiagonal(cell,maxSteps,dim);
+		return Piece::movement.moveDiagonal(cell,maxSteps);
 	}

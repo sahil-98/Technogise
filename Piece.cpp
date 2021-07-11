@@ -5,12 +5,8 @@
 
 using namespace std;
 
-Piece::Piece()
-{
 
-}
-
-string Piece::possibleMoves(Cell cell ,int maxSteps , int dim){
+string Piece::possibleMoves(Cell cell ,int maxSteps){
     return "";
 };
 

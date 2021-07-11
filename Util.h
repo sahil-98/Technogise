@@ -1,14 +1,13 @@
 #ifndef UTIL_H
 #define UTIL_H
+#include "Cell.h"
 
 
 class Util
 {
     public:
         Util();
-
-    protected:
-
+        bool checkBounds(Cell cell,int dim);
     private:
 };
 

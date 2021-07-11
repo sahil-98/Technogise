@@ -8,7 +8,7 @@ using namespace std;
 class King: public Piece
 {
     private:
-        string possibleMoves(Cell cell ,int maxSteps , int dim);
+        string possibleMoves(Cell cell ,int maxSteps);
     public:
         King();
         friend class Chess;

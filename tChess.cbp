@@ -35,6 +35,8 @@
 		</Compiler>
 		<Unit filename="Bishop.cpp" />
 		<Unit filename="Bishop.h" />
+		<Unit filename="Cell.cpp" />
+		<Unit filename="Cell.h" />
 		<Unit filename="Chess.cpp" />
 		<Unit filename="Chess.h" />
 		<Unit filename="King.cpp" />
@@ -74,6 +76,8 @@
 		<Unit filename="TestRook.h" />
 		<Unit filename="UnitTests.cpp" />
 		<Unit filename="UnitTests.h" />
+		<Unit filename="Util.cpp" />
+		<Unit filename="Util.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="tChess.cbp" />
 		<Unit filename="tChess.cpp" />

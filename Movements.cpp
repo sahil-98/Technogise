@@ -4,15 +4,10 @@
 using namespace std;
 
 
-Movements::Movements()
-{
-
-}
-
-string Movements::move(int currentVerticalPos, int currentHorizontalPos, int VerticalStep, int HorizontalStep, int maxSteps, int dim){
+string Movements::move(int currentVerticalPos, int currentHorizontalPos, int VerticalStep, int HorizontalStep, int maxSteps){
     char  alphabets[8] = {'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G' , 'H'};
     string moveList="";
-    maxSteps = min(maxSteps,dim-1);
+    maxSteps = min(maxSteps,Movements::dim-1);
     for(int i=0;i<maxSteps;i++){
         currentVerticalPos+= VerticalStep;
         currentHorizontalPos+= HorizontalStep;
@@ -27,42 +22,42 @@ string Movements::move(int currentVerticalPos, int currentHorizontalPos, int Ver
     return moveList;
 }
 //Function call for moving Upwards
-string Movements::moveUp( Cell cell  ,int maxSteps , int dim){
-		return Movements::move(cell.vertical,cell.horizontal,1,0,maxSteps,dim); //Up
+string Movements::moveUp( Cell cell  ,int maxSteps){
+		return Movements::move(cell.vertical,cell.horizontal,1,0,maxSteps); //Up
 }
 //Function call for moving Downwards
-string Movements::moveDown(Cell cell,int maxSteps , int dim){
-    return Movements::move(cell.vertical,cell.horizontal,-1,0,maxSteps,dim); //Down
+string Movements::moveDown(Cell cell,int maxSteps){
+    return Movements::move(cell.vertical,cell.horizontal,-1,0,maxSteps); //Down
 }
 //Function call for moving Leftwards
-string Movements::moveLeft(Cell cell ,int maxSteps , int dim){
-    return Movements::move(cell.vertical,cell.horizontal,0,-1,maxSteps,dim); //Left
+string Movements::moveLeft(Cell cell ,int maxSteps){
+    return Movements::move(cell.vertical,cell.horizontal,0,-1,maxSteps); //Left
 }
 //Function call for moving Rightwards
-string Movements::moveRight(Cell cell ,int maxSteps , int dim){
-    return Movements::move(cell.vertical,cell.horizontal,0,1,maxSteps,dim); //Right
+string Movements::moveRight(Cell cell ,int maxSteps){
+    return Movements::move(cell.vertical,cell.horizontal,0,1,maxSteps); //Right
 }
 //Function call for moving Diagonal
-string Movements::moveDiagonal(Cell cell ,int maxSteps , int dim){
+string Movements::moveDiagonal(Cell cell ,int maxSteps){
     //Adding movements to moveListExtend string
     string moveListExtend="";
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,-1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,-1,maxSteps,dim);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,-1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,-1,maxSteps);
     return moveListExtend;
 }
 //Function call for moving Ldirection
-string Movements::moveLdirection(Cell cell,int maxSteps , int dim){
+string Movements::moveLdirection(Cell cell,int maxSteps){
     //Adding movements to moveListExtend string
     string moveListExtend="";
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,2,1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,2,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-2,1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,2,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,2,-1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,-2,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-2,-1,maxSteps,dim);
-    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,-2,maxSteps,dim);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,2,1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,2,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-2,1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,2,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,2,-1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,1,-2,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-2,-1,maxSteps);
+    moveListExtend+= Movements::move(cell.vertical,cell.horizontal,-1,-2,maxSteps);
     return moveListExtend;
 }

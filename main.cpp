@@ -1,12 +1,15 @@
 #include "Chess.h"
+#include "Util.h"
 #include "UnitTests.h"
+#include "Movements.h"
 #include<iostream>
 using namespace std;
 
+const int boardDimension = 8;
+
+int Movements::dim=boardDimension;
 int main(){
     UnitTests ut;
-    const int boardDimension = 8;;
-
 	Chess chessobject(boardDimension);
 
     cout<<"\n\nKing A5:"<<endl;

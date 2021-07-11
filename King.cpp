@@ -9,14 +9,14 @@ King::King()
 
 }
 
-string King::possibleMoves(Cell cell ,int maxSteps , int dim){
+string King::possibleMoves(Cell cell ,int maxSteps){
     //Adding movements to moveListExtend string
     string moveListExtend="";
-    moveListExtend+= Piece::movement.moveUp(cell,maxSteps,dim);
-    moveListExtend+= Piece::movement.moveDown(cell,maxSteps,dim);
-    moveListExtend+= Piece::movement.moveLeft(cell,maxSteps,dim);
-    moveListExtend+= Piece::movement.moveRight(cell,maxSteps,dim);
-    moveListExtend+= Piece::movement.moveDiagonal(cell,maxSteps,dim);
+    moveListExtend+= Piece::movement.moveUp(cell,maxSteps);
+    moveListExtend+= Piece::movement.moveDown(cell,maxSteps);
+    moveListExtend+= Piece::movement.moveLeft(cell,maxSteps);
+    moveListExtend+= Piece::movement.moveRight(cell,maxSteps);
+    moveListExtend+= Piece::movement.moveDiagonal(cell,maxSteps);
     return moveListExtend;
 }
 

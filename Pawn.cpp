@@ -9,7 +9,7 @@ Pawn::Pawn()
 
 }
 
-string Pawn::possibleMoves(Cell cell , int maxSteps , int dim){
+string Pawn::possibleMoves(Cell cell , int maxSteps){
 
-    return Piece::movement.moveUp(cell,maxSteps,dim);
+    return Piece::movement.moveUp(cell,maxSteps);
 }
